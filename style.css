@@ -1,0 +1,48 @@
+body {
+    background-color:white;
+    overflow: hidden;
+}
+
+.page {
+    text-align: center;
+    margin-top: 10vh;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.page #content1 {
+    background-color:violet;
+    margin-top: 5%;
+    padding-bottom: 60vh;
+}
+
+.page #content2 {
+    background-color: turquoise;
+    margin-top: 5%;
+    padding-bottom: 60vh;
+}
+
+.page #content3 {
+    background-color: green;
+    margin-top: 5%;
+    padding-bottom: 60vh;
+}
+
+.controls img {
+    width: auto;
+    height: 20vh;
+}
+
+.controls #left {
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    cursor: pointer;
+}
+
+.controls #right {
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    cursor: pointer;
+}
