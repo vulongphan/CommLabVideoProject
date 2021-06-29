@@ -3,11 +3,29 @@ body {
     overflow: hidden;
 }
 
+.progress-bar {
+    height: 3vh;
+    margin-top: 8vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.progress-segment {
+    flex: 0 0 10%;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border: solid;
+    border-radius: 5px;
+}
+
 .page {
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 2vh;
     padding-left: 20%;
     padding-right: 20%;
+    display: none;
 }
 
 .page #content1 {
