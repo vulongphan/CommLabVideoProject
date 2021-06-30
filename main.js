@@ -9,6 +9,7 @@ var right_arrow = document.getElementById("right");
 // initial rendering
 PagesArray[0].style.display = 'block';
 ProgressSegmentsArray[0].style.background = "black";
+left_arrow.style.display = "none";
 
 // display current page based on curPage index
 function displayCurrentPage(curPage) {
@@ -31,8 +32,22 @@ function displayCurrentProgressSegment(curPage) {
             progressSegment.style.background = "white";
         }
         else {
-            progressSegment.style.background = "black";
+            if (i == 0) progressSegment.style.background = 'black';
+            if (i == 1) progressSegment.style.background = '#FFD55A';
+            if (i == 2) progressSegment.style.background = '#293250';
+            if (i == 3) progressSegment.style.background = '#6DD47E';
         }
+    }
+}
+
+//display arrows depending on curPage index
+function displayArrows(curPage) {
+    if (curPage === 0) {
+        left_arrow.style.display = "none";
+    }
+    else {
+        left_arrow.style.display = "block";
+        right_arrow.style.display = "block";
     }
 }
 
@@ -43,6 +58,7 @@ left_arrow.addEventListener('click', () => {
         curPage -= 1;
         displayCurrentPage(curPage);
         displayCurrentProgressSegment(curPage);
+        displayArrows(curPage);
     }
 });
 
@@ -52,6 +68,7 @@ right_arrow.addEventListener('click', ()=>{
         curPage += 1
         displayCurrentPage(curPage);
         displayCurrentProgressSegment(curPage);
+        displayArrows(curPage);
     }
 })
 

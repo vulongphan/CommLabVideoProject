@@ -1,8 +1,10 @@
 body {
-    background-color:white;
+    background-image: url("images/background.jpg");
     /* overflow: hidden; */
     overflow-x: hidden;
     overflow-y: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 p {
@@ -12,7 +14,6 @@ p {
 .progress-bar {
     height: 3vh;
     margin-top: 8vh;
-    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -24,6 +25,7 @@ p {
     margin-right: 2vw;
     border: solid;
     border-radius: 5px;
+    
 }
 
 .page {
@@ -35,37 +37,50 @@ p {
 }
 
 .page #content1 {
-    background-color:violet;
+    font-size: 35px;
     margin-top: 10%;
+    margin-bottom: 10%;
     /* height: 55vh; */
     padding: 5vh 10vw 5vh 10vw;
     text-align: center;
-    border: 5px solid black;
-    border-radius: 10px;
     line-height: 1.6;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .page #content2 {
-    background-color: turquoise;
+    background-color: #FFD55A;
+    color: #293250;
     margin-top: 10%;
-    height: 55vh;
-    padding: 5vh 10vw 5vh 10vw;
+    /* height: 55vh; */
+    padding: 5vh 10vw 8vh 10vw;
     text-align: center;
     border: 5px solid black;
-    border-radius: 10px;
+    border-radius: 15px;
     line-height: 1.6;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .page #content3 {
-    background-color: green;
+    background-color: #293250;
     margin-top: 10%;
-    /* height: 55vh; */
-    padding: 12vh 10vw 15vh 10vw;
+    height: 55vh;
+    padding: 5vh 10vw 5vh 10vw;
     text-align: center;
     border: 5px solid black;
-    border-radius: 10px;
+    border-radius: 15px;
+    line-height: 1.6;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.page #content4 {
+    background-color: #6DD47E;
+    color: #293250;
+    margin-top: 10%;
+    /* height: 55vh; */
+    padding: 8vh 10vw 10vh 10vw;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 15px;
     line-height: 1.6;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: 20px;
