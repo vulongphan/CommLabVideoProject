@@ -77,13 +77,13 @@ p {
     color: #293250;
     margin-top: 10%;
     /* height: 55vh; */
-    padding: 8vh 10vw 10vh 10vw;
+    padding: 8vh 10vw 8vh 10vw;
     text-align: center;
     border: 5px solid black;
     border-radius: 15px;
     line-height: 1.6;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .controls img {
