@@ -1,6 +1,12 @@
 body {
     background-color:white;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+p {
+    font-size: 35px;
 }
 
 .progress-bar {
@@ -30,20 +36,38 @@ body {
 
 .page #content1 {
     background-color:violet;
-    margin-top: 5%;
-    padding-bottom: 60vh;
+    margin-top: 10%;
+    height: 55vh;
+    padding: 5vh 10vw 5vh 10vw;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    line-height: 1.6;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .page #content2 {
     background-color: turquoise;
-    margin-top: 5%;
-    padding-bottom: 60vh;
+    margin-top: 10%;
+    height: 55vh;
+    padding: 5vh 10vw 5vh 10vw;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    line-height: 1.6;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .page #content3 {
     background-color: green;
-    margin-top: 5%;
-    padding-bottom: 60vh;
+    margin-top: 10%;
+    height: 55vh;
+    padding: 5vh 10vw 5vh 10vw;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    line-height: 1.6;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .controls img {
@@ -54,13 +78,13 @@ body {
 .controls #left {
     position: absolute;
     left: 5%;
-    top: 40%;
+    top: 45%;
     cursor: pointer;
 }
 
 .controls #right {
     position: absolute;
     right: 5%;
-    top: 40%;
+    top: 45%;
     cursor: pointer;
 }
