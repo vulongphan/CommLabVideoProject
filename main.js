@@ -45,6 +45,9 @@ function displayArrows(curPage) {
     if (curPage === 0) {
         left_arrow.style.display = "none";
     }
+    else if (curPage === PagesArray.length-1) {
+        right_arrow.style.display = "none";
+    }
     else {
         left_arrow.style.display = "block";
         right_arrow.style.display = "block";
@@ -56,6 +59,7 @@ function displayArrows(curPage) {
 left_arrow.addEventListener('click', () => {
     if (curPage > 0) {
         curPage -= 1;
+        console.log("left arrow clicked, curPage: ", curPage);
         displayCurrentPage(curPage);
         displayCurrentProgressSegment(curPage);
         displayArrows(curPage);
@@ -66,6 +70,7 @@ left_arrow.addEventListener('click', () => {
 right_arrow.addEventListener('click', ()=>{
     if (curPage < PagesArray.length-1) {
         curPage += 1
+        console.log("right arrow clicked, curPage: ", curPage);
         displayCurrentPage(curPage);
         displayCurrentProgressSegment(curPage);
         displayArrows(curPage);
