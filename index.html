@@ -2,11 +2,24 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="icon/ico" href="favicon.ico"/>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <title>Fly&Bug World</title>
 </head>
 
 <body>
+    <audio id="myAudio"><source src="kahoot.mp3" type="audio/mpeg"></audio>
     <div class = "progress-bar">
+        <div class = "progress-segment">
+        </div>
+        <div class = "progress-segment">
+        </div>
+        <div class = "progress-segment">
+        </div>
         <div class = "progress-segment">
         </div>
         <div class = "progress-segment">
@@ -24,16 +37,110 @@
     <div class="page">
         <h1></h1>
         <div id = "content2">
-            <p>Hi! Welcome to the Fly&Bug world. We are here to give you tips and tricks on how to annoy human
-                beings and piss them off by our existence! We worked extremely hard to give you those skills. Go
-                to the next page and enjoy the tutorial!
+            <p>Hi! Welcome to the Fly&Bug world. We are here to give you tips and tricks on how to annoy human 
+                beings and piss them off by our existence! <br>We have made this simple guide for all the young insects 
+                aspiring to fulfill the mission for which we were given the gift of life, to decrease humans’ quality of life. 
+                For most of them one look at us is enough to start feeling itchy and uncomfortable. But it obviously doesn’t do the thing for all of them.
+                In this lecture we will take a look at three foolproof ways in which we can annoy every single one of them.
+                Go to the next page to enjoy the tutorial!
             </p>
         </div>
     </div>
     <div class="page">
         <h1></h1>
-        <div id = "content3">
-            <p>Video</p>
+        <div id = "content31">
+            <video id="video21" src="clip1_3.mp4" type="video/mp4" onended="endScreen()" onclick="videoAction(video21)">
+                Your browser does not support this streaming content.
+            </video>
+            <div id="pause21" class="on-pause" onclick="videoAction(video21, pause21)">
+                <span class="material-icons-outlined">play_circle</span>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div id = "content32">
+            <div class="video-div">
+                <video id="video22" src="clip2.mp4" type="video/mp4" onended="endScreen()" onclick="videoAction(video22)" ontimeupdate="pauseVideo(video22, overlay2, 36)">
+                    Your browser does not support this streaming content.
+                </video>
+            </div>
+            <div id="pause22" class="on-pause" onclick="videoAction(video22, pause22)">
+                <span class="material-icons-outlined">play_circle</span>
+            </div>
+            <div id="overlay2" class="video-overlay">
+                <div id="question2">
+                <p class="question-text">Which one of the classic pieces would you choose as the background music for your attack?</p>
+                    <form>
+                        <label class="options">
+                        <input type="radio" name="radio" checked>
+                        <span class="checkmark"></span>
+                        “Ride of the Valkyries” - Wagner
+                    </label>
+                    <label class="options">
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                        “Messiah” - Handel
+                    </label>
+                    <label class="options">
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                        “Turkish March” - Mozart
+                    </label>
+                    <label class="options">
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                        “Prelude in C major” - Bach
+                    </label>
+                    <label class="options">
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                        "Ouverture- Cancan" - Jacques Offenbach
+                    </label>
+                    </form>
+                </div>
+                <button class="submit" onclick="submitStatus(video22, overlay2, 36)">submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div id = "content33">
+            <div class="video-div">
+                <video id="video23" src="clip3.mp4" type="video/mp4" onclick="play()" onended="endScreen()" ontimeupdate="pauseVideo(video23, overlay3, 48)">
+                    Your browser does not support this streaming content.
+                </video>
+            </div>
+            <div id="pause23" class="on-pause" onclick="videoAction(video23, pause23)">
+                <span class="material-icons-outlined">play_circle</span>
+            </div>
+            <div id="overlay3" class="video-overlay">
+                <div id="question3">
+                <p class="question-text">Which one of the insults is the most effective in attacking humans?</p>
+                <form>
+                    <label class="options">
+                        <input type="radio" name="radio" checked>
+                        <span class="checkmark"></span>
+                        “You’re bad at choosing fonts”
+                    </label>
+                    <label class="options">
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                        “You’re bad at choosing color schemes”
+                    </label>
+                    <label class="options">
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                        “You're not the favorite child”
+                    </label>
+                </form>
+                    <button class="submit" onclick="submitStatus(video23, overlay3, 48)">submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div id = "content34">
+            <p></p>
+            <!-- there goes some conclusion of a sort -->
         </div>
     </div>
     <div class="page">
@@ -52,10 +159,10 @@
 
     <div class="controls">
         <div id="left">
-            <img src="images/left.png"></img>
+            <img id="limg" src="images/left.png"></img>
         </div>
         <div id="right">
-            <img src="images/right.png"></img>
+            <img id="rimg" src="images/right.png"></img>
         </div>
     </div>
     <script src="main.js"></script>
